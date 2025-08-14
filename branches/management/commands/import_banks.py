@@ -11,6 +11,8 @@ class Command(BaseCommand):
         # Use transaction for better performance
         with transaction.atomic():
             # Dictionary to track created banks
+            Branch.objects.all().delete()
+            Bank.objects.all().delete()
             created_banks = {}
             
             # Open file with explicit UTF-8 encoding
