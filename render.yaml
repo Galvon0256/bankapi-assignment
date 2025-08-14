@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: bankapi
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn bankapi.wsgi:application"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DISABLE_COLLECTSTATIC
+        value: 1  # Disable collectstatic initially
+databases:
+  - name: bankapi_db
+    plan: free  # Free PostgreSQL database
