@@ -8,4 +8,6 @@ pip install -r requirements.txt
 python manage.py migrate
 
 # (Optional) Import initial data
-# python manage.py import_banks
+python manage.py import_banks
+
+python manage.py check --deploy
