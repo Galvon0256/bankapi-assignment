@@ -9,7 +9,8 @@ A Django REST API for Indian bank branch data deployed on Render.
 - Optimized queries with `select_related`
 
 ## Project Structure
-``bankapi-assignment/
+```bash
+bankapi-assignment/
 │
 ├── bankapi/                       # Django project root
 │   ├── __init__.py
@@ -46,7 +47,7 @@ A Django REST API for Indian bank branch data deployed on Render.
 ├── README.md
 ├── requirements.txt               # Dependencies
 └── runtime.txt                    # Python version for Render
-``
+```
 
 ## Key Development Challenges & Solutions
 
